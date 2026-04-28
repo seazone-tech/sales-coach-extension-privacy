@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Seazone Sales Coach</title>
+  <meta name="description" content="Privacy policy for the Seazone Sales Coach Chrome extension for Google Meet.">
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --bg-card: #ffffff;
+      --text: #1e3a5f;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --primary: #1e3a5f;
+      --accent: #3b82f6;
+      --border: #e2e8f0;
+      --code-bg: #f1f5f9;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .brand-icon {
+      width: 36px; height: 36px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+    main {
+      padding: 48px 0 80px;
+    }
+    .lede {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.25;
+      margin: 0 0 12px;
+      color: var(--primary);
+    }
+    .updated {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin: 0 0 32px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 36px 0 12px;
+      color: var(--primary);
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 16px;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+    p, li {
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 22px;
+    }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      color: var(--primary);
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      color: var(--text-muted);
+      font-size: 13px;
+      background: var(--bg-card);
+    }
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="brand" href="/">
+        <span class="brand-icon">S</span>
+        <span>Seazone Sales Coach</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="lede">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 28, 2026</p>
+
+    <p>
+      Seazone Sales Coach for Google Meet ("the Extension") is provided by
+      Seazone Tecnologia e Serviços ("Seazone", "we") to support
+      real-estate sales agents during investor calls on Google Meet.
+    </p>
+    <p>
+      This policy explains what data the Extension processes, where it goes,
+      and why.
+    </p>
+
+    <h2>1. Who can use the Extension</h2>
+    <p>
+      The Extension is intended for authenticated Seazone agents only. It
+      requires an active account at
+      <a href="https://hub.seazone.dev">https://hub.seazone.dev</a>.
+      Users who are not Seazone agents will not be able to use any of the
+      coaching features.
+    </p>
+
+    <h2>2. Data we process</h2>
+    <p>
+      When you start a coaching session inside a Google Meet call by clicking
+      <strong>"Start Listening"</strong>, the Extension processes the
+      following data:
+    </p>
+
+    <h3>a) Audio from your microphone</h3>
+    <ul>
+      <li>Captured locally in the browser using the Web Speech API
+        (<code>webkitSpeechRecognition</code>).</li>
+      <li>Transcribed by your browser; the resulting text is treated as
+        "Agent" speech.</li>
+      <li>The microphone audio itself is not uploaded by the Extension.</li>
+    </ul>
+
+    <h3>b) Audio shared from the Google Meet tab</h3>
+    <ul>
+      <li>Captured via <code>getDisplayMedia</code> after you explicitly
+        grant "Share this tab with audio" permission.</li>
+      <li>Sent as short audio chunks (webm/opus) over HTTPS to Seazone's
+        transcription endpoint at
+        <code>https://hub.seazone.dev/v1/audio/transcriptions</code>
+        (a Whisper-based speech-to-text service operated by Seazone).</li>
+      <li>The returned text is treated as "Investor" speech and shown in
+        the sidebar.</li>
+    </ul>
+
+    <h3>c) Transcripts and meeting metadata</h3>
+    <ul>
+      <li>Transcript lines, detected objections, sentiment scores, the
+        meeting URL, the participant names visible in the call and the
+        participant email addresses exposed by Google Meet's DOM are sent
+        over HTTPS to Seazone's backend (Supabase Edge Functions) at:
+        <ul>
+          <li><code>.../functions/v1/analyze-sentiment</code></li>
+          <li><code>.../functions/v1/get-extension-template</code></li>
+          <li><code>.../functions/v1/salvar-reuniao-da-extensao</code></li>
+          <li><code>.../functions/v1/extension-event</code></li>
+        </ul>
+      </li>
+      <li>This data is stored on Seazone's Supabase project and linked to
+        your Seazone agent account so you can review past meetings inside
+        the Seazone CRM.</li>
+    </ul>
+
+    <h3>d) Local storage</h3>
+    <ul>
+      <li>The Extension stores only one local preference (sidebar
+        open/closed state) using <code>chrome.storage.local</code>. No call
+        content is stored locally.</li>
+    </ul>
+
+    <h2>3. What we do NOT do</h2>
+    <ul>
+      <li>We do not sell user data.</li>
+      <li>We do not transfer user data to third parties for purposes
+        unrelated to the Extension's single purpose.</li>
+      <li>We do not use user data for advertising, credit-scoring or any
+        purpose unrelated to sales-coaching for Seazone agents.</li>
+      <li>We do not transcribe Google Meet calls in the background. The
+        Extension only captures audio while a session is explicitly active
+        and only for the agent's own meetings.</li>
+    </ul>
+
+    <h2>4. Permissions and why we need them</h2>
+    <ul>
+      <li><code>storage</code> — remember whether the sidebar is open
+        between page loads.</li>
+      <li><code>activeTab</code> — inject the coaching sidebar into the
+        Google Meet tab the user is on.</li>
+      <li><code>host_permissions</code> for
+        <code>https://meet.google.com/*</code> — render the sidebar inside
+        Google Meet pages.</li>
+    </ul>
+
+    <h2>5. Data retention and deletion</h2>
+    <p>
+      Transcripts and meeting summaries are retained on Seazone's backend
+      for as long as the agent's account is active. Agents can request
+      deletion of their data by emailing
+      <a href="mailto:privacy@seazone.com.br">privacy@seazone.com.br</a>.
+      Requests are processed within 30 days.
+    </p>
+
+    <h2>6. Security</h2>
+    <p>
+      All network traffic between the Extension and Seazone services is
+      over HTTPS/TLS. Authentication uses Supabase JWT tokens scoped to
+      the authenticated agent.
+    </p>
+
+    <h2>7. Children</h2>
+    <p>
+      The Extension is not directed at children under 13 and is not
+      available to anyone outside of Seazone's authenticated agents.
+    </p>
+
+    <h2>8. Changes</h2>
+    <p>
+      Material changes to this policy will be reflected at this URL with
+      a new "Last updated" date.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      Seazone Tecnologia e Serviços<br>
+      <a href="mailto:privacy@seazone.com.br">privacy@seazone.com.br</a><br>
+      <a href="https://seazone.com.br">https://seazone.com.br</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <span>&copy; 2026 Seazone Tecnologia e Serviços</span>
+      <span><a href="https://seazone.com.br">seazone.com.br</a></span>
+    </div>
+  </footer>
+</body>
+</html>
