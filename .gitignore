@@ -1,0 +1,11 @@
+# private signing key — NEVER commit
+private/
+*.pem
+
+# build / deps
+node_modules/
+.DS_Store
+Thumbs.db
+
+# bundled installer artifact (rebuild as needed)
+*.zip

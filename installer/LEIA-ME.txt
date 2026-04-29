@@ -1,0 +1,61 @@
+================================================
+  SEAZONE SALES COACH - INSTALACAO
+================================================
+
+A extensao funciona dentro do Google Meet, mostrando
+uma sidebar com transcricao em tempo real, deteccao
+de objecoes e analise de sentimento.
+
+------------------------------------------------
+WINDOWS
+------------------------------------------------
+1. Feche o Google Chrome (todas as janelas).
+2. Du clique em "install.bat".
+3. Aceite a janela que abrir e siga as instrucoes.
+4. Abra o Chrome.
+5. Em alguns segundos a extensao sera instalada
+   automaticamente. Voce vera o icone Seazone
+   ao lado da barra de enderecos.
+6. Entre em uma reuniao do Google Meet -> a
+   sidebar aparecera no canto direito.
+
+Para desinstalar: du clique em "uninstall.bat".
+
+------------------------------------------------
+macOS
+------------------------------------------------
+1. Feche o Google Chrome (todas as janelas).
+2. Abra o Terminal (Cmd+Espaco -> "Terminal").
+3. Arraste "install-mac.sh" para o Terminal e
+   pressione Enter.
+4. Siga as instrucoes na tela.
+5. Abra o Chrome - a extensao sera instalada.
+
+Para desinstalar: rode "uninstall-mac.sh" do mesmo jeito.
+
+------------------------------------------------
+LINUX
+------------------------------------------------
+1. Feche o Google Chrome.
+2. Abra o terminal na pasta extraida.
+3. Execute: bash install-linux.sh
+4. Digite sua senha quando pedido.
+5. Abra o Chrome.
+
+Para desinstalar: bash uninstall-linux.sh
+
+------------------------------------------------
+NAO FUNCIONOU?
+------------------------------------------------
+- Verifique que voce FECHOU completamente o Chrome
+  antes de rodar o instalador.
+- Abra chrome://policy no Chrome -> deve aparecer
+  "ExtensionInstallForcelist". Se nao aparecer,
+  clique em "Recarregar politicas" no topo.
+- Reinicie o computador se nada funcionar.
+- Em ultimo caso, fale com o time de Sales Ops.
+
+------------------------------------------------
+DUVIDAS
+Luiz Lopes (Sales Ops) - luiz.lopes@seazone.com.br
+================================================
