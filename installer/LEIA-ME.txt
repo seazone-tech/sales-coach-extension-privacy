@@ -7,10 +7,10 @@ uma sidebar com transcricao em tempo real, deteccao
 de objecoes e analise de sentimento.
 
 ------------------------------------------------
-WINDOWS
+WINDOWS  (caminho rapido)
 ------------------------------------------------
 1. Feche o Google Chrome (todas as janelas).
-2. Du clique em "install.bat".
+2. Du clique em "CLIQUE-AQUI-PARA-INSTALAR.bat".
 3. Aceite a janela que abrir e siga as instrucoes.
 4. Abra o Chrome.
 5. Em alguns segundos a extensao sera instalada
@@ -19,30 +19,32 @@ WINDOWS
 6. Entre em uma reuniao do Google Meet -> a
    sidebar aparecera no canto direito.
 
-Para desinstalar: du clique em "uninstall.bat".
+Para desinstalar: abra a pasta "outros-sistemas"
+e du clique em "uninstall.bat".
 
 ------------------------------------------------
 macOS
 ------------------------------------------------
 1. Feche o Google Chrome (todas as janelas).
 2. Abra o Terminal (Cmd+Espaco -> "Terminal").
-3. Arraste "install-mac.sh" para o Terminal e
-   pressione Enter.
+3. Arraste "outros-sistemas/install-mac.sh" para
+   o Terminal e pressione Enter.
 4. Siga as instrucoes na tela.
 5. Abra o Chrome - a extensao sera instalada.
 
-Para desinstalar: rode "uninstall-mac.sh" do mesmo jeito.
+Para desinstalar: rode "outros-sistemas/uninstall-mac.sh"
+do mesmo jeito.
 
 ------------------------------------------------
 LINUX
 ------------------------------------------------
 1. Feche o Google Chrome.
 2. Abra o terminal na pasta extraida.
-3. Execute: bash install-linux.sh
+3. Execute: bash outros-sistemas/install-linux.sh
 4. Digite sua senha quando pedido.
 5. Abra o Chrome.
 
-Para desinstalar: bash uninstall-linux.sh
+Para desinstalar: bash outros-sistemas/uninstall-linux.sh
 
 ------------------------------------------------
 NAO FUNCIONOU?
