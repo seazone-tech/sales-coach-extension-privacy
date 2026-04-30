@@ -203,15 +203,16 @@
       <h3>📦 Passo a passo (todos os sistemas)</h3>
       <ol>
         <li>Clique em <strong>"Baixar extensão (.zip)"</strong> acima.</li>
-        <li><strong>Extraia o ZIP</strong> em <code>Documentos</code>
-          (ou outra pasta que você não vai apagar).
-          Vai aparecer uma pasta chamada <code>seazone-sales-coach-extension</code>.</li>
+        <li><strong>Extraia o ZIP</strong> diretamente no <code>C:\</code>
+          (não use Documentos/OneDrive — o OneDrive pode deixar os arquivos
+          como atalho da nuvem e o Chrome não lê).
+          Vai aparecer a pasta <code>C:\seazone-sales-coach-extension</code>.</li>
         <li>No Chrome, abra <code>chrome://extensions/</code>
           (digita na barra de endereço).</li>
         <li>No canto superior direito, ligue o <strong>"Modo do desenvolvedor"</strong>.</li>
         <li>Clique em <strong>"Carregar sem compactação"</strong> (canto superior esquerdo).</li>
-        <li>Selecione a pasta <code>seazone-sales-coach-extension</code> que
-          apareceu no passo 2 → <strong>Selecionar pasta</strong>.</li>
+        <li>Selecione <code>C:\seazone-sales-coach-extension</code> →
+          <strong>Selecionar pasta</strong>.</li>
         <li>Pronto. Entre em uma reunião do Google Meet → a sidebar aparece no canto direito.</li>
       </ol>
       <div class="callout" style="margin-top: 14px;">
@@ -227,12 +228,13 @@
       <strong>Cheque na ordem:</strong>
       <ul style="margin: 8px 0 0; padding-left: 20px;">
         <li><strong>Modo do desenvolvedor está ligado</strong> em <code>chrome://extensions/</code>?</li>
-        <li>Você selecionou a pasta <strong>que contém</strong> o
-          <code>manifest.json</code> (não a pasta acima)?</li>
+        <li>A pasta está <strong>fora do OneDrive</strong>? Se você extraiu em
+          Documentos sincronizados, apague e extraia direto no <code>C:\</code>.</li>
+        <li>Erro <em>"manifesto faltando"</em>: você apontou pra pasta errada
+          ou extraiu de forma errada. Apague tudo, baixe o ZIP de novo
+          e extraia direto no <code>C:\</code>.</li>
         <li>Se o ícone Seazone não aparecer, clique no quebra-cabeça 🧩 no topo
           do Chrome → fixe a extensão.</li>
-        <li>Se o Chrome reclamar do <code>manifest.json</code>, você pode ter
-          extraído errado — apague e extraia o ZIP novamente.</li>
       </ul>
     </div>
     <p style="color: var(--text-secondary); font-size: 15px;">
