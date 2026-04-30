@@ -7,18 +7,21 @@
   <meta name="description" content="Instale a extensão Seazone Sales Coach no Google Chrome para ter coach em tempo real durante reuniões no Google Meet.">
   <style>
     :root {
-      --bg: #f8f9fa;
-      --bg-card: #ffffff;
-      --text: #1e3a5f;
-      --text-secondary: #475569;
-      --text-muted: #64748b;
-      --primary: #1e3a5f;
-      --accent: #3b82f6;
-      --accent-hover: #2563eb;
-      --border: #e2e8f0;
-      --code-bg: #f1f5f9;
-      --success: #10b981;
+      --bg: #0b1220;
+      --bg-card: #111a2e;
+      --text: #e2e8f0;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --primary: #e2e8f0;
+      --accent: #60a5fa;
+      --accent-hover: #93c5fd;
+      --border: #1f2a44;
+      --code-bg: #0f1a30;
+      --success: #34d399;
+      --warn-bg: #2a2110;
+      --warn-border: #b45309;
     }
+    body { color-scheme: dark; }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; }
     body {
@@ -49,11 +52,12 @@
     }
     .brand-icon {
       width: 36px; height: 36px;
-      background: var(--primary);
-      color: #fff;
+      background: var(--accent);
+      color: #0b1220;
       border-radius: 8px;
       display: flex; align-items: center; justify-content: center;
       font-size: 18px;
+      font-weight: 700;
     }
     main { padding: 48px 0 80px; }
     .lede {
@@ -88,15 +92,15 @@
       justify-content: center;
       gap: 10px;
       background: var(--accent);
-      color: #fff;
+      color: #0b1220;
       padding: 14px 28px;
       border-radius: 8px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 16px;
       text-decoration: none;
-      transition: background 0.15s ease;
+      transition: background 0.15s ease, transform 0.15s ease;
     }
-    .btn:hover { background: var(--accent-hover); text-decoration: none; }
+    .btn:hover { background: var(--accent-hover); text-decoration: none; transform: translateY(-1px); }
     .btn-meta {
       display: block;
       margin-top: 10px;
@@ -142,15 +146,15 @@
       color: var(--primary);
     }
     .callout {
-      background: #fffbeb;
-      border-left: 3px solid #f59e0b;
+      background: var(--warn-bg);
+      border-left: 3px solid var(--warn-border);
       padding: 14px 18px;
       border-radius: 6px;
       margin: 16px 0;
       font-size: 14px;
       color: var(--text-secondary);
     }
-    .callout strong { color: var(--primary); }
+    .callout strong { color: #fbbf24; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     footer {
