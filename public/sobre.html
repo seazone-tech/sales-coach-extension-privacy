@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre — Seazone Sales Coach</title>
+  <meta name="description" content="Como funciona a extensão Seazone Sales Coach: captura de áudio, transcrição em tempo real, detecção de objeções e análise de sentimento.">
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-card: #111a2e;
+      --text: #e2e8f0;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --primary: #e2e8f0;
+      --accent: #60a5fa;
+      --border: #1f2a44;
+      --code-bg: #0f1a30;
+    }
+    body { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .brand-icon {
+      width: 36px; height: 36px;
+      background: var(--accent);
+      color: #0b1220;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    main { padding: 48px 0 80px; }
+    .lede {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.25;
+      margin: 0 0 12px;
+      color: var(--primary);
+    }
+    .subtitle {
+      font-size: 16px;
+      color: var(--text-secondary);
+      margin: 0 0 32px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 36px 0 12px;
+      color: var(--primary);
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 16px;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+    p, li {
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      color: var(--text);
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .feature {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+    .feature h3 {
+      margin: 0 0 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .feature p {
+      margin: 0;
+      font-size: 14px;
+    }
+    .pipeline {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 16px 0;
+    }
+    .pipeline-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 14px;
+    }
+    .pipeline-row:last-child { border-bottom: none; }
+    .pipeline-icon {
+      width: 32px; height: 32px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background: var(--code-bg);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+    }
+    .callout {
+      background: #0e2030;
+      border-left: 3px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .cta-row {
+      display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--accent);
+      color: #0b1220;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; opacity: 0.9; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      color: var(--text-muted);
+      font-size: 13px;
+      background: var(--bg-card);
+    }
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="brand" href="/">
+        <span class="brand-icon">S</span>
+        <span>Seazone Sales Coach</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="lede">Sobre a extensão</p>
+    <h1>Como funciona o Sales Coach</h1>
+    <p class="subtitle">
+      Uma sidebar dentro do Google Meet que escuta sua reunião, transcreve as
+      falas e te ajuda em tempo real a fechar mais negócios.
+    </p>
+
+    <h2>O que ela faz</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>📝 Transcrição em tempo real</h3>
+        <p>
+          Captura sua voz pelo microfone e a voz do cliente pelo áudio da aba
+          do Meet. As falas aparecem na sidebar separadas por quem falou.
+        </p>
+      </div>
+      <div class="feature">
+        <h3>⚠️ Detecção de objeções</h3>
+        <p>
+          Quando o cliente fala algo como "tá caro", "vou pensar" ou "preciso
+          falar com minha esposa", aparece um popup amarelo com a dica de como
+          contornar aquela objeção específica.
+        </p>
+      </div>
+      <div class="feature">
+        <h3>🌡️ Termômetro de interesse</h3>
+        <p>
+          Cada palavra positiva ("gostei", "vamos fechar") soma; cada negativa
+          ("não confio", "absurdo") subtrai. Vai de −10 a +10. Em ≥ +7 dispara
+          "Interesse Alto"; em ≤ −5, "Interesse Baixo".
+        </p>
+      </div>
+      <div class="feature">
+        <h3>😊 Sentimento via IA</h3>
+        <p>
+          A cada 30 segundos, as últimas falas do cliente são analisadas por
+          IA pra estimar o tom geral (interessado, neutro, resistente).
+        </p>
+      </div>
+      <div class="feature">
+        <h3>📋 Checklist da reunião</h3>
+        <p>
+          Marca automaticamente cada etapa que você cumpre — abertura,
+          desenvolvimento, negociação, fechamento — e fecha com um score de
+          performance no fim.
+        </p>
+      </div>
+      <div class="feature">
+        <h3>💡 Detecção de silêncio</h3>
+        <p>
+          Se ninguém fala por 30 segundos, a extensão lembra você de fazer
+          uma pergunta pra reengajar o cliente.
+        </p>
+      </div>
+    </div>
+
+    <h2>Como ela escuta</h2>
+    <p>
+      A extensão usa dois canais de áudio independentes:
+    </p>
+    <div class="pipeline">
+      <div class="pipeline-row">
+        <div class="pipeline-icon">🎤</div>
+        <div>
+          <strong>Vendedor</strong> — microfone do navegador →
+          reconhecimento de voz nativo do Chrome (instantâneo).
+        </div>
+      </div>
+      <div class="pipeline-row">
+        <div class="pipeline-icon">👤</div>
+        <div>
+          <strong>Cliente</strong> — áudio compartilhado da aba do Meet →
+          chunks de 5 segundos → Whisper na infra Seazone (LLM Hub) → texto.
+        </div>
+      </div>
+    </div>
+    <p style="font-size: 14px; color: var(--text-muted);">
+      Por isso pedimos pra você compartilhar a aba com áudio quando começa a
+      reunião — sem isso, não dá pra transcrever a voz do cliente.
+    </p>
+
+    <h2>Privacidade dos dados</h2>
+    <ul>
+      <li>O áudio do cliente é enviado em chunks pra transcrição e <strong>descartado depois</strong>
+        — nada de áudio bruto fica salvo.</li>
+      <li>O texto transcrito é processado em <code>hub.seazone.dev</code>
+        (Whisper) e <code>ussfqmqwyavjsqngtztl.supabase.co</code> (Supabase Seazone).</li>
+      <li>Quando você clica em <em>Concluir Reunião</em>, a transcrição e o
+        score são salvos no Supabase pra você consultar depois no dashboard.</li>
+      <li>Detalhes completos: <a href="/privacy.html">Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>Quem fez</h2>
+    <p>
+      Construído pelo time de <strong>AI Builders</strong> da Seazone, com base
+      em pesquisa de objeções reais feitas em reuniões do time de vendas.
+      A lista de palavras-chave é pt-BR e cobre as falas mais comuns
+      ("tá caro", "salgado", "preciso falar com minha esposa", etc).
+    </p>
+
+    <div class="callout">
+      <strong>Continua em desenvolvimento:</strong> a Seazone usa essa extensão
+      internamente. Sugestões, palavras que faltam ou ideias de melhoria,
+      manda direto pro <a href="mailto:luiz.lopes@seazone.com.br">Luiz Lopes</a>
+      (Coordenador de AI Builders).
+    </div>
+
+    <div class="cta-row">
+      <a class="btn" href="/">⬇ Ir pra página de instalação</a>
+      <a class="btn btn-secondary" href="/privacy.html">Privacy Policy</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <span>© 2026 Seazone Tecnologia e Serviços</span>
+      <span>
+        <a href="/">Início</a>
+        &nbsp;·&nbsp;
+        <a href="/sobre.html">Sobre</a>
+        &nbsp;·&nbsp;
+        <a href="/privacy.html">Privacy Policy</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:luiz.lopes@seazone.com.br">Contato</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
