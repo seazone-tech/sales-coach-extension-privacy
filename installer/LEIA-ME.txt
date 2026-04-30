@@ -60,9 +60,9 @@ NAO FUNCIONOU?
   "ExtensionInstallForcelist". Se nao aparecer,
   clique em "Recarregar politicas" no topo.
 - Reinicie o computador se nada funcionar.
-- Em ultimo caso, fale com o time de Sales Ops.
+- Em ultimo caso, fale com o time de AI Builders.
 
 ------------------------------------------------
 DUVIDAS
-Luiz Lopes (Sales Ops) - luiz.lopes@seazone.com.br
+Luiz Lopes (Coordenador de AI Builders) - luiz.lopes@seazone.com.br
 ================================================
