@@ -9,5 +9,6 @@ Thumbs.db
 
 # bundled installer artifacts (rebuild as needed)
 *.zip
-# but track the public download
+# but track public downloads
 !public/Seazone-Sales-Coach.zip
+!public/seazone-sales-coach-extension.zip

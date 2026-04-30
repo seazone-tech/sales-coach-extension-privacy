@@ -191,10 +191,10 @@
     </p>
 
     <div class="cta-card">
-      <a class="btn" href="/seazone-sales-coach.crx" download>
-        ⬇ Baixar extensão (.crx)
+      <a class="btn" href="/seazone-sales-coach-extension.zip" download>
+        ⬇ Baixar extensão (.zip)
       </a>
-      <span class="btn-meta">~245 KB &nbsp;·&nbsp; Funciona em qualquer Chrome</span>
+      <span class="btn-meta">~242 KB &nbsp;·&nbsp; Funciona em qualquer Chrome</span>
     </div>
 
     <h2>Como instalar</h2>
@@ -202,20 +202,23 @@
     <div class="os-card">
       <h3>📦 Passo a passo (todos os sistemas)</h3>
       <ol>
-        <li>Clique em <strong>"Baixar extensão (.crx)"</strong> acima — o arquivo vai
-          parar na sua pasta de Downloads.</li>
-        <li>No Chrome, abra <code>chrome://extensions/</code> (digita na barra de endereço).</li>
+        <li>Clique em <strong>"Baixar extensão (.zip)"</strong> acima.</li>
+        <li><strong>Extraia o ZIP</strong> em uma pasta que você não vai apagar
+          (ex: <code>Documentos\seazone-sales-coach</code>).
+          Importante: a extensão precisa continuar nessa pasta pro Chrome usar.</li>
+        <li>No Chrome, abra <code>chrome://extensions/</code>
+          (digita na barra de endereço).</li>
         <li>No canto superior direito, ligue o <strong>"Modo do desenvolvedor"</strong>.</li>
-        <li><strong>Arraste o arquivo</strong> <code>seazone-sales-coach.crx</code>
-          da pasta Downloads para dentro da página <code>chrome://extensions/</code>.</li>
-        <li>O Chrome vai perguntar <em>"Adicionar Seazone Sales Coach?"</em> →
-          clique em <strong>Adicionar extensão</strong>.</li>
+        <li>Clique em <strong>"Carregar sem compactação"</strong> (canto superior esquerdo).</li>
+        <li>Selecione a pasta <code>seazone-sales-coach</code> que você extraiu →
+          <strong>Selecionar pasta</strong>.</li>
         <li>Pronto. Entre em uma reunião do Google Meet → a sidebar aparece no canto direito.</li>
       </ol>
       <div class="callout" style="margin-top: 14px;">
         <strong>Importante:</strong> deixe o "Modo do desenvolvedor" <strong>ligado</strong>
-        — se desligar, o Chrome desativa a extensão. Quando o app for aprovado
-        na Chrome Web Store, isso deixa de ser necessário.
+        e <strong>não apague a pasta</strong> da extensão — o Chrome lê os
+        arquivos direto dali. Quando o app for aprovado na Chrome Web Store,
+        nada disso será necessário.
       </div>
     </div>
 
@@ -224,10 +227,12 @@
       <strong>Cheque na ordem:</strong>
       <ul style="margin: 8px 0 0; padding-left: 20px;">
         <li><strong>Modo do desenvolvedor está ligado</strong> em <code>chrome://extensions/</code>?</li>
-        <li>Se aparecer aviso "<em>CRX_REQUIRED_PROOF_MISSING</em>" ao arrastar:
-          o arquivo está corrompido — baixe de novo.</li>
+        <li>Você selecionou a pasta <strong>que contém</strong> o
+          <code>manifest.json</code> (não a pasta acima)?</li>
         <li>Se o ícone Seazone não aparecer, clique no quebra-cabeça 🧩 no topo
           do Chrome → fixe a extensão.</li>
+        <li>Se o Chrome reclamar do <code>manifest.json</code>, você pode ter
+          extraído errado — apague e extraia o ZIP novamente.</li>
       </ul>
     </div>
     <p style="color: var(--text-secondary); font-size: 15px;">
