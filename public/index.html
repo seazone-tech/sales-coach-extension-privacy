@@ -191,65 +191,43 @@
     </p>
 
     <div class="cta-card">
-      <a class="btn" href="/Seazone-Sales-Coach.zip" download>
-        ⬇ Baixar instalador
+      <a class="btn" href="/seazone-sales-coach.crx" download>
+        ⬇ Baixar extensão (.crx)
       </a>
-      <span class="btn-meta">Windows · macOS · Linux &nbsp;·&nbsp; ~4 KB</span>
+      <span class="btn-meta">~245 KB &nbsp;·&nbsp; Funciona em qualquer Chrome</span>
     </div>
 
     <h2>Como instalar</h2>
 
     <div class="os-card">
-      <h3>🪟 Windows (caminho rápido)</h3>
+      <h3>📦 Passo a passo (todos os sistemas)</h3>
       <ol>
-        <li><strong>Feche o Google Chrome</strong> (todas as janelas).</li>
-        <li>Extraia o ZIP que você acabou de baixar.</li>
-        <li>Abra a pasta <code>Seazone-Sales-Coach</code>.</li>
-        <li>Dê duplo clique em <code>INSTALAR.reg</code>.</li>
-        <li>Confirme as duas perguntas do Windows (a primeira é o
-          Editor do Registro pedindo permissão).</li>
-        <li>Abra o Chrome — em segundos a extensão será instalada automaticamente.</li>
-        <li>Entre em uma reunião do Google Meet → a sidebar aparece no canto direito.</li>
+        <li>Clique em <strong>"Baixar extensão (.crx)"</strong> acima — o arquivo vai
+          parar na sua pasta de Downloads.</li>
+        <li>No Chrome, abra <code>chrome://extensions/</code> (digita na barra de endereço).</li>
+        <li>No canto superior direito, ligue o <strong>"Modo do desenvolvedor"</strong>.</li>
+        <li><strong>Arraste o arquivo</strong> <code>seazone-sales-coach.crx</code>
+          da pasta Downloads para dentro da página <code>chrome://extensions/</code>.</li>
+        <li>O Chrome vai perguntar <em>"Adicionar Seazone Sales Coach?"</em> →
+          clique em <strong>Adicionar extensão</strong>.</li>
+        <li>Pronto. Entre em uma reunião do Google Meet → a sidebar aparece no canto direito.</li>
       </ol>
       <div class="callout" style="margin-top: 14px;">
-        <strong>Smart App Control bloqueando?</strong> O <code>.reg</code> é seguro —
-        ele só adiciona uma política do Chrome no registro do Windows,
-        não executa programa. Pode confirmar com tranquilidade.
+        <strong>Importante:</strong> deixe o "Modo do desenvolvedor" <strong>ligado</strong>
+        — se desligar, o Chrome desativa a extensão. Quando o app for aprovado
+        na Chrome Web Store, isso deixa de ser necessário.
       </div>
-    </div>
-
-    <div class="os-card">
-      <h3>🍎 macOS</h3>
-      <ol>
-        <li><strong>Feche o Google Chrome</strong> (todas as janelas).</li>
-        <li>Extraia o ZIP e abra a pasta <code>Seazone-Sales-Coach</code>.</li>
-        <li>Abra o Terminal (Cmd+Espaço → "Terminal").</li>
-        <li>Arraste o arquivo <code>outros-sistemas/install-mac.sh</code> para o Terminal e pressione Enter.</li>
-        <li>Siga as instruções na tela.</li>
-        <li>Abra o Chrome — a extensão será instalada.</li>
-      </ol>
-    </div>
-
-    <div class="os-card">
-      <h3>🐧 Linux</h3>
-      <ol>
-        <li>Feche o Google Chrome.</li>
-        <li>Extraia o ZIP e abra um terminal na pasta <code>Seazone-Sales-Coach</code>.</li>
-        <li>Execute: <code>bash outros-sistemas/install-linux.sh</code></li>
-        <li>Digite sua senha quando o sistema pedir.</li>
-        <li>Abra o Chrome.</li>
-      </ol>
     </div>
 
     <h2>Não funcionou?</h2>
     <div class="callout">
-      <strong>Antes de pedir ajuda</strong>, verifique:
+      <strong>Cheque na ordem:</strong>
       <ul style="margin: 8px 0 0; padding-left: 20px;">
-        <li>Você fechou <strong>completamente</strong> o Chrome antes de instalar?</li>
-        <li>Abra <code>chrome://policy</code> no Chrome — deve aparecer
-          <code>ExtensionInstallForcelist</code>. Se não aparecer, clique em
-          "Recarregar políticas" no topo.</li>
-        <li>Como último recurso, reinicie o computador.</li>
+        <li><strong>Modo do desenvolvedor está ligado</strong> em <code>chrome://extensions/</code>?</li>
+        <li>Se aparecer aviso "<em>CRX_REQUIRED_PROOF_MISSING</em>" ao arrastar:
+          o arquivo está corrompido — baixe de novo.</li>
+        <li>Se o ícone Seazone não aparecer, clique no quebra-cabeça 🧩 no topo
+          do Chrome → fixe a extensão.</li>
       </ul>
     </div>
     <p style="color: var(--text-secondary); font-size: 15px;">
@@ -258,9 +236,16 @@
 
     <h2>Como desinstalar</h2>
     <p style="color: var(--text-secondary); font-size: 15px;">
-      No Windows, dê duplo clique em <code>DESINSTALAR.reg</code>.
-      No macOS/Linux, rode <code>outros-sistemas/uninstall-mac.sh</code> ou
-      <code>outros-sistemas/uninstall-linux.sh</code>.
+      Abra <code>chrome://extensions/</code>, encontre "Seazone Sales Coach" e
+      clique em <strong>Remover</strong>.
+    </p>
+
+    <h2>Computador gerenciado pela empresa? (avançado)</h2>
+    <p style="color: var(--text-secondary); font-size: 15px;">
+      Se sua máquina é Workspace-managed com Chrome Browser Cloud Management,
+      dá pra instalar via política sem o modo desenvolvedor.
+      <a href="/Seazone-Sales-Coach.zip" download>Baixe o pacote com o <code>.reg</code> aqui</a>
+      — caso contrário ignore esta seção.
     </p>
   </main>
 
