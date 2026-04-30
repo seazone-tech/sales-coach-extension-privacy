@@ -7,11 +7,13 @@ uma sidebar com transcricao em tempo real, deteccao
 de objecoes e analise de sentimento.
 
 ------------------------------------------------
-WINDOWS  (caminho rapido)
+WINDOWS
 ------------------------------------------------
 1. Feche o Google Chrome (todas as janelas).
-2. Du clique em "CLIQUE-AQUI-PARA-INSTALAR.bat".
-3. Aceite a janela que abrir e siga as instrucoes.
+2. Du clique em "INSTALAR.reg".
+3. O Windows vai pedir confirmacao -> clique em "Sim"
+   na primeira janela e em "Sim" novamente quando o
+   Editor do Registro perguntar.
 4. Abra o Chrome.
 5. Em alguns segundos a extensao sera instalada
    automaticamente. Voce vera o icone Seazone
@@ -19,8 +21,11 @@ WINDOWS  (caminho rapido)
 6. Entre em uma reuniao do Google Meet -> a
    sidebar aparecera no canto direito.
 
-Para desinstalar: abra a pasta "outros-sistemas"
-e du clique em "uninstall.bat".
+Para desinstalar: du clique em "DESINSTALAR.reg".
+
+OBS: Se o Smart App Control bloquear o instalador,
+o arquivo .reg eh seguro - ele apenas adiciona uma
+politica do Chrome, nao executa programa.
 
 ------------------------------------------------
 macOS
